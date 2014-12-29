@@ -11,7 +11,7 @@ $(document).ready(function() {
   // creating todo
   $('#new-todo').on('keypress', function (event) {
     if(event.which == ENTER_KEY){
-      if($(this).val().length>4){
+      if($(this).val().trim().length>4){
         todo.create($(this).val().trim());
         $(this).val('');
         template.footer();
@@ -25,7 +25,7 @@ $(document).ready(function() {
   // editing todo
   $('#edit-todo').on('keypress', function (event) {
     if(event.which == ENTER_KEY){
-      if($(this).val().length>4){
+      if($(this).val().trim().length>4){
         todo.update($(this).val().trim(), $('#edit-id').val());
         $(this).val('');
         $('#edit-id').val('');
