@@ -1,0 +1,56 @@
+.container{
+  max-width: 600px;
+  margin-top: 60px;
+}
+
+.container h1{
+  text-align: center;
+  font-weight: 800;
+}
+
+#main{
+  margin-bottom: -4px;
+}
+
+.task-completed{
+  text-decoration: line-through;
+}
+
+.icon-mark-done{
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.icon-marked-done{
+  color: rgb(30, 197, 104);
+}
+
+.icon-mark-delete{
+  color: tomato;
+  cursor: pointer;
+  display: none;
+}
+
+
+#main li:hover .icon-mark-delete{
+  display: block;
+}
+
+.panel-default{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.footer-links span{
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.footer-links span:hover{
+  text-decoration: underline;
+}
+
+.footer-active{
+  font-weight: 800;
+  text-decoration: underline;
+}
