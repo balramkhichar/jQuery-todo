@@ -1,10 +1,27 @@
+body{
+  background: gray;
+  background:url('../images/back.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .container{
-  max-width: 600px;
+  max-width: 700px;
   margin-top: 60px;
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .container h1{
   text-align: center;
+  font-weight: 800;
+  font-size: 5em;
+}
+
+#new-todo{
+  height: 54px;
+  font-size: 22px;
   font-weight: 800;
 }
 
@@ -53,4 +70,31 @@
 .footer-active{
   font-weight: 800;
   text-decoration: underline;
+}
+
+#remove_done{
+  background: tomato;
+  padding: 4px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 800;
+}
+
+#mark_all_done{
+  background: seagreen;
+  padding: 4px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 800;
+}
+
+.cat-title{
+  padding: 2px;
+  border-style: double;
+  border-radius: 5px;
+  background: #5cb85c;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center;
 }
