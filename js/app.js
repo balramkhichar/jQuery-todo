@@ -6,13 +6,13 @@ $(document).ready(function() {
   storage = todoCollection.get();
   todoCats  = todoCollection.getCats();
   
-  if(storage.length<1){
+  if(storage==null){
     var data = [];
     todoCollection.set(data);
     storage = todoCollection.get();
   }
 
-  if(todoCats.length<1){
+  if(todoCats==null){
     var data = [{cat_id:1, cat_title:'default'}];
     todoCollection.setCats(data);
     todoCats = todoCollection.getCats();
