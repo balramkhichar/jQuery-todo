@@ -85,7 +85,7 @@ $(document).ready(function() {
     template.drawFooter();
   });
 
-  $('body').on('click','#remove_done', function() {
+  $('body').on('click','#remove_done[', function() {
     todoCollection.removeDone();
     template.draw();
     template.drawFooter();

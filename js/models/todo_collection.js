@@ -20,7 +20,9 @@ function TodoCollection(){
   this.checkCat = function(val){
     var curr_cat_id = '';
     for(i in todoCats){
-      if(todoCats[i].cat_title == val){var curr_cat_id = todoCats[i].cat_id;}
+      if(todoCats[i].cat_title == val){
+        var curr_cat_id = todoCats[i].cat_id;
+      }
     }
     if(curr_cat_id==''){var curr_cat_id = this.createCat(val);}
     return curr_cat_id;
