@@ -7,14 +7,15 @@ $(document).ready(function() {
   todoCats  = todoCollection.getCats();
   
   if(storage==null){
+    alert("");
     var data = [];
     todoCollection.set(data);
     storage = todoCollection.get();
   }
 
   if(todoCats==null){
-    var data = [{cat_id:1, cat_title:'default'}];
-    todoCollection.setCats(data);
+    var cat_data = [{cat_id:1, cat_title:'default'}];
+    todoCollection.setCats(cat_data);
     todoCats = todoCollection.getCats();
   }
 
