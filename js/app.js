@@ -12,8 +12,7 @@ $(document).ready(function() {
     storage = todoCollection.get();
   }
 
-  if(todoCats==null||todoCats==[]){
-    alert("");
+  if(todoCats==null||todoCats==''){
     var cat_data = [{cat_id:1, cat_title:'default'}];
     todoCollection.setCats(cat_data);
     todoCats = todoCollection.getCats();
@@ -26,6 +25,6 @@ $(document).ready(function() {
 
 
 window.onbeforeunload = function() {
-  //todoCollection.set(storage);
-  //todoCollection.setCats(todoCats);
+  todoCollection.set(storage);
+  todoCollection.setCats(todoCats);
 };
